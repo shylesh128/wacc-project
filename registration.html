@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="reg.css">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+<body>
+  <div class="container">
+    <div class="title">Event Registration</div>
+    <div class="content">
+      <form action="regconnect.php" method="post">
+        <div class="user-details">
+          <div class="input-box">
+            <span class="details">Full Name</span>
+            <input type="text" id="fullname" name ="fullname" placeholder="Enter your name" pattern="[A-Za-z ]{1,32}"  title="Enter a proper name " required>
+          </div>
+           <div class="input-box">
+            <span class="details">Register number</span>
+            <input type="text" id="regno" name ="regno" placeholder="Enter your Register number" pattern="(?=.*\d)(?=.*[A-Z]).{5,}" title="Enter a proper Register number " required>
+          </div>
+          <div class="input-box">
+            <span class="details">Email</span>
+            <input type="text" id="email" name ="email" placeholder="Enter your email" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Phone Number</span>
+            <input type="text" id="phno" name ="phno" placeholder="Enter your number" pattern="[6789][0-9]{9}" placeholder="Please enter your phone"" title="Enter a proper phone number " required>
+          </div>
+        </div>
+
+
+        <div class="event-details" name="event" value="ff" >
+          
+          <span class="event-title">Events</span>
+          <div class="category">
+           <label for="dot-1"> 
+            <span class="dot one"><input type="radio"  name="event" value="n" id="neerathon">
+             </span>
+            <span class="event">Event 1</span>
+          </label>
+          <label for="dot-1">
+            <span class="dot two"> <input type="radio"  name="event" value="w" id="wild">
+              </span>
+            <span class="event">Event 2</span>
+          </label>
+          <label for="dot-1">
+            <span class="dot three"><input type="radio" name="event" value="c" id="credit"></span>
+            <span class="event">Event 3
+            </span>
+            </label>
+          </div>
+        </div>
+        <div class="button">
+          <input type="submit" value="Register">
+        </div>
+      </form>
+    </div>
+  </div>
+
+</body>
+</html>
